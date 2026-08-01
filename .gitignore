@@ -1,0 +1,30 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Build outputs
+build/
+*.pdf
+
+# Results (large intermediate files)
+code/results/BASELINE_SWEEP_CONSOLIDATED.jsonl
+code/results/comprehensive_eval.jsonl
+code/results/docker_eval_results.jsonl
+
+# OS
+.DS_Store
+Thumbs.db

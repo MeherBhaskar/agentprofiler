@@ -1,0 +1,81 @@
+% ICML 2026 Style File (minimal compatible version)
+% Based on icml2024.sty from ICML
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{icml2026}[2026/01/01 ICML 2026 style]
+
+% Page layout
+\paperwidth=8.5in
+\paperheight=11in
+\topmargin=-0.25in
+\oddsidemargin=0.75in
+\evensidemargin=0.75in
+\textwidth=7.0in
+\textheight=9.25in
+\headheight=12pt
+\headsep=25pt
+\footskip=30pt
+
+% Two-column mode
+\if@twocolumn\else
+  \@twocolumntrue
+\fi
+
+% Font
+\RequirePackage{times}
+\RequirePackage{helvet}
+\RequirePackage{courier}
+
+% Spacing
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+
+% Abstract
+\def\abstractname{Abstract}
+\def\abstract{
+  \begin{center}
+    {\bfseries \abstractname}
+  \end{center}
+  \begin{quote}
+}
+
+\def\endabstract{\end{quote}\vspace{1em}}
+
+% Keywords
+\newcommand{\icmlkeywords}[1]{\vspace{0.5em}\noindent{\bfseries Keywords:} #1}
+
+% Sections
+\RequirePackage{titlesec}
+\titleformat{\section}{\bfseries\large}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection.}{0.5em}{}
+
+% Bibliography
+\RequirePackage{natbib}
+\setlength{\bibsep}{0.5ex}
+\setlength{\bibhang}{0.5in}
+
+% Captions
+\RequirePackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=4pt}
+
+% Floats
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+
+% Hyperref
+\RequirePackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+% Algorithms
+\RequirePackage{algorithm}
+\RequirePackage{algorithmic}
+
+% Booktabs for tables
+\RequirePackage{booktabs}
+
+% Multi-column floats
+\RequirePackage{multicol}
+
+% End
+\endinput
