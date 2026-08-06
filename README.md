@@ -80,13 +80,3 @@ Key results in `code/results/`:
 - `judge_calibration.jsonl` - Human-LLM agreement data
 - `human_judge_spotcheck_*.jsonl` - Human verification
 
-## Citation
-
-```bibtex
-@inproceedings{agentslabench2026,
-  title={AgentLabBench: A Benchmark for Profiling AI Agent Capabilities},
-  author={...},
-  booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
-  year={2026}
-}
-```
